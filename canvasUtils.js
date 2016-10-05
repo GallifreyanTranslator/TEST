@@ -2,7 +2,7 @@
 var scrollerObj = new Scroller(function(left, top, zoom) {
     // apply coordinates/zooming
 }, {
-    zooming: true,
+    zooming: false,
     locking: true,
     bouncing: false,
     animating: false,
