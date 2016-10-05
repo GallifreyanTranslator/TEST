@@ -27,10 +27,10 @@ var Scroller;
 		this.options = {
 
 			/** Enable scrolling on x-axis */
-			scrollingX: true,
+			scrollingX: false,
 
 			/** Enable scrolling on y-axis */
-			scrollingY: true,
+			scrollingY: false,
 
 			/** Enable animations for deceleration, snap back, zooming and scrolling */
 			animating: true,
@@ -57,7 +57,7 @@ var Scroller;
 			minZoom: 0.5,
 
 			/** Maximum zoom level */
-			maxZoom: 3,
+			maxZoom: 0.7,
 
 			/** Multiply or decrease scrolling speed **/
 			speedMultiplier: 1,
