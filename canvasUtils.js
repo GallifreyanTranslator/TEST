@@ -2,12 +2,12 @@
 var scrollerObj = new Scroller(function(left, top, zoom) {
     // apply coordinates/zooming
 }, {
-    zooming: false,
+    zooming: true,
     locking: true,
     bouncing: false,
-    animating: false,
+    animating: true,
     minZoom: 1,
-    maxZoom: 10
+    maxZoom: 2
 });
 
 var canvas, ctx, mousedown = false, mousemove = 0;
