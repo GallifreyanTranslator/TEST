@@ -3,7 +3,7 @@ var scrollerObj = new Scroller(function(left, top, zoom) {
     // apply coordinates/zooming
 }, {
     zooming: true,
-    locking: false,
+    locking: true,
     bouncing: false,
     animating: false,
     minZoom: 1,
@@ -17,13 +17,13 @@ function prepareCanvas() {
     canvas.onselectstart = function() { return false; }
     canvas.setAttribute('width', canvasSize);
     canvas.setAttribute('height', canvasSize);
-    canvas.style.width = "800px";
-    canvas.style.height = "800px";
+    canvas.style.width = "300px";
+    canvas.style.height = "300px";
     ctx = canvas.getContext("2d");
 
     ctx.lineCap = 'round';
 
-    scrollerObj.setDimensions(800, 800, 800, 800);	//I'm almost certain that I'm doing this the wrong way, but somehow it works flawlessly
+    scrollerObj.setDimensions(300, 300, 300, 300);	//I'm almost certain that I'm doing this the wrong way, but somehow it works flawlessly
     scrollerObj.setPosition($('canvas').position().left, $('canvas').position().top);
 
     canvas.addEventListener("mousedown", function(e) {
