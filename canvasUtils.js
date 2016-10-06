@@ -17,8 +17,8 @@ function prepareCanvas() {
     canvas.onselectstart = function() { return false; }
     canvas.setAttribute('width', canvasSize);
     canvas.setAttribute('height', canvasSize);
-    canvas.style.width = "800px";
-    canvas.style.height = "800px";
+    canvas.style.width = "400px";
+    canvas.style.height = "400px";
     ctx = canvas.getContext("2d");
 
     ctx.lineCap = 'round';
