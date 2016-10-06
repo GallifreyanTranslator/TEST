@@ -38,7 +38,7 @@ function drawArc(x, y, r, a1, a2) { ctx.beginPath(); ctx.arc(x, y, r, a1, a2); c
 function drawLine(x1, y1, x2, y2) { ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke(); }
 function drawDot(x, y, r) { ctx.beginPath(); ctx.arc(x, y, r, 0, PI * 2); ctx.fill(); }
 
-//draws a red dot in a given location, signifying a circle you can select
+//draws a red dot in a given location, signifying a circle you can  be select
 function drawRedDot(x, y) { ctx.fillStyle = "red"; drawDot(x, y, 3 + lineWidth / 3); ctx.fillStyle = "black"; }
 
 $(document).ready(function() {
