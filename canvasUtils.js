@@ -1,6 +1,6 @@
 "use strict";
 var scrollerObj = new Scroller(function(left, top, zoom) {
-    // apply coordinates/zooming
+    // apply coordinateszooming
 }, {
     zooming: true,
     locking: false,
