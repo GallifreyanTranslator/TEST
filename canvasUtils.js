@@ -23,7 +23,7 @@ function prepareCanvas() {
 
     ctx.lineCap = 'round';
 
-    scrollerObj.setDimensions(800, 800, 800, 800);	//I'm almost certain that I'm doing this the wrong way, but somehow it works flawlessly
+    scrollerObj.setDimensions(400, 400, 400, 400);	//I'm almost certain that I'm doing this the wrong way, but somehow it works flawlessly
     scrollerObj.setPosition($('canvas').position().left, $('canvas').position().top);
 
     canvas.addEventListener("mousedown", function(e) {
