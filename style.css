@@ -10,7 +10,7 @@ canvas {
     border: 8px solid black;
 }
 #canvas-container {
-    width: 1000%;
+    width: 100%;
     padding: 10px;
 }
 #textfield-container {
@@ -18,17 +18,17 @@ canvas {
     padding: 1px;
 }
 input {
-    margin: 10px;
-    padding: 100px;  
+    margin: 100px;
+    padding: 10px;  
     border: solid 1px #E5E5E5;  
     outline: 0;  
-    font-size: 18px;
-    width: 300px;  
+    font-size: 14px;
+    width: 200px;  
     background: #FFFFFF;  
 }
 button {
     width: auto;  
-    padding: 9px 15px;  
+    padding: 2px 7px;  
     background: #117198;  
     border: 0;
     font-size: 18px;
