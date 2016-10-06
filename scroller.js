@@ -27,10 +27,10 @@ var Scroller;
 		this.options = {
 
 			/** Enable scrolling on x-axis */
-			scrollingX: true,
+			scrollingX: false,
 
 			/** Enable scrolling on y-axis */
-			scrollingY: true,
+			scrollingY: false,
 
 			/** Enable animations for deceleration, snap back, zooming and scrolling */
 			animating: true,
@@ -48,7 +48,7 @@ var Scroller;
 			paging: false,
 
 			/** Enable snapping of content to a configured pixel grid */
-			snapping: false,
+			snapping: true,
 
 			/** Enable zooming of content via API, fingers and mouse wheel */
 			zooming: false,
