@@ -1,6 +1,6 @@
 /*
  * Scroller
- * http://github.com/zynga/scroller
+ * http://github.com/zynga/scrollers
  *
  * Copyright 2011, Zynga Inc.
  * Licensed under the MIT License.
