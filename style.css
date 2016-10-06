@@ -7,10 +7,10 @@ p {
 }
 canvas {
     display: inline;
-    border: 2px solid black;
+    border: 8px solid black;
 }
 #canvas-container {
-    width: 100%;
+    width: 1000%;
     padding: 10px;
 }
 #textfield-container {
