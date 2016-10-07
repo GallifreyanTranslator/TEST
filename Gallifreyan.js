@@ -1,6 +1,6 @@
 "use strict";
-var canvasSize  = 400.0;               //the image resolution in pixels
-var canvasScale = canvasSize / 400.0;   //800=the canvas size on the screen
+var canvasSize  = 1000.0;               //the image resolution in pixels
+var canvasScale = canvasSize / 800.0;   //800=the canvas size on the screen
 var midPoint    = canvasSize / 2.0;     //the (x, y) of the centerpoint
 var outerR      = midPoint * 0.9;       //radius of the outermost circle
 var lineWidth   = 3.0 * canvasScale;
@@ -38,7 +38,7 @@ function drawArc(x, y, r, a1, a2) { ctx.beginPath(); ctx.arc(x, y, r, a1, a2); c
 function drawLine(x1, y1, x2, y2) { ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke(); }
 function drawDot(x, y, r) { ctx.beginPath(); ctx.arc(x, y, r, 0, PI * 2); ctx.fill(); }
 
-//draws a red dot in a given location, signifying a circle you can  be select
+//draws a red dot in a given location, signifying a circle you can select
 function drawRedDot(x, y) { ctx.fillStyle = "red"; drawDot(x, y, 3 + lineWidth / 3); ctx.fillStyle = "black"; }
 
 $(document).ready(function() {

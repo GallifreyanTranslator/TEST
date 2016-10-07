@@ -20,8 +20,8 @@ function Button(x, y, width, text, f) {
         }
         else return 0;
     }
-    this.x = x * canvasScale - 0.8;
-    this.y = y * canvasScale - 0.8;
+    this.x = x * canvasScale - 0.5;
+    this.y = y * canvasScale - 0.5;
     this.width = width * canvasScale;
     this.height = 30 * canvasScale;
     this.text = text;
@@ -38,7 +38,6 @@ function createGUI() {
         function() { lineWidth -= 0.5; if (lineWidth < 0.5) lineWidth = 0.5; redraw(); }
     ));
 }
-display_set_gui_size(400, 400);
 
 function drawGUI() {
     for (var i = 0; i < buttons.length; ++i) {

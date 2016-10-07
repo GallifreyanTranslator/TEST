@@ -1,6 +1,6 @@
 /*
  * Scroller
- * http://github.com/zynga/scrollers
+ * http://github.com/zynga/scroller
  *
  * Copyright 2011, Zynga Inc.
  * Licensed under the MIT License.
@@ -27,10 +27,10 @@ var Scroller;
 		this.options = {
 
 			/** Enable scrolling on x-axis */
-			scrollingX: false,
+			scrollingX: true,
 
 			/** Enable scrolling on y-axis */
-			scrollingY: false,
+			scrollingY: true,
 
 			/** Enable animations for deceleration, snap back, zooming and scrolling */
 			animating: true,
@@ -48,7 +48,7 @@ var Scroller;
 			paging: false,
 
 			/** Enable snapping of content to a configured pixel grid */
-			snapping: true,
+			snapping: false,
 
 			/** Enable zooming of content via API, fingers and mouse wheel */
 			zooming: false,
