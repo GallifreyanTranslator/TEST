@@ -7,15 +7,15 @@ p {
 }
 canvas {
     display: inline;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 #canvas-container {
-    width: 100%;
-    padding: 10px;
+    width: 150%;
+    padding: 100px;
 }
 #textfield-container {
-    width: 100%;
-    padding: 0px;
+    width: 150%;
+    padding: 5px;
 }
 input {
     margin: 10px;
@@ -23,7 +23,7 @@ input {
     border: solid 1px #E5E5E5;  
     outline: 0;  
     font-size: 15px;
-    width: 200px;  
+    width: 250px;  
     background: #FFFFFF;  
 }
 button {
