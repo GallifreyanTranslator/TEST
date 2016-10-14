@@ -23,7 +23,7 @@ function prepareCanvas() {
 
     ctx.lineCap = 'round';
 
-    scrollerObj.setDimensions(400, 400, 400, 400);	//I'm almost certain that I'm doing this the wrong way, but somehow it works flawlessly
+    scrollerObj.setDimensions(450, 450, 500, 500);	//I'm almost certain that I'm doing this the wrong way, but somehow it works flawlessly
     scrollerObj.setPosition($('canvas').position().left, $('canvas').position().top);
 
     canvas.addEventListener("mousedown", function(e) {
@@ -76,7 +76,7 @@ function getMouse(e) {
 
 $('canvas').mousewheel(function(e, delta, deltaX, deltaY) {
     if (selectedCircle) return;
-    //scrollerObj.doMouseZoom(-delta * 3, e.timeStamp, e.pageX, e.pageY);
+    scrollerObj.doMouseZoom(-delta * 3, e.timeStamp, e.pageX, e.pageY);
     redraw();
     return false;
 });

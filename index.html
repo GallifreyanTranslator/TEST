@@ -11,7 +11,8 @@
             <input type="text"/>
             <button type="button" onclick="updateText(); return false;">Translate</button>
             <br>
-            
+            <button type="button" onclick="zoomUp(); return false;">Zoom In</button>
+            <button type="button" onclick="zoomDown(); return false;">Zoom Out</button>
         </div>
         <div id="canvas-container">
             <canvas id="canvas">Your browser doesn't support canvas</canvas>
@@ -19,6 +20,7 @@
         <p style="font-size:10px">Created by The Doctor</p>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="jquery.mousewheel.js"></script>
+    <script src="gui.js"></script>
     <script src="intersection.js"></script>
     <script src="scroller.js"></script>
     <script src="canvasUtils.js"></script>

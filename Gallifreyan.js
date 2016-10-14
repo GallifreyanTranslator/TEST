@@ -1,6 +1,6 @@
 "use strict";
 var canvasSize  = 1000.0;               //the image resolution in pixels
-var canvasScale = canvasSize / 800.0;   //800=the canvas size on the screen
+var canvasScale = canvasSize / 500.0;   //400=the canvas size on the screen
 var midPoint    = canvasSize / 2.0;     //the (x, y) of the centerpoint
 var outerR      = midPoint * 0.9;       //radius of the outermost circle
 var lineWidth   = 3.0 * canvasScale;
