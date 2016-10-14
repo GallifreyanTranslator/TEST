@@ -1,50 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-
-    <title>Gallifreyan translator</title>
-    <meta name="description" content="An open-source Gallifreyan translator">
-    
-    <link href="style.css" rel="stylesheet">
-
-  </head>
-
-  <body>
-    <div id="textfield-container">
-        <h3>Gallifreyan Translator</h3>
-        <input></input>
-        <button type="button" onclick="updateText(); return false;">Translate</button>
-    </div>
-    <div id="canvas-container">
-        <canvas id="canvas">Your browser doesn't support canvas</canvas>
-    </div>
-
-    <p style="font-size:10px">Created by The Doctor</p>
-    
-    </a>
-    
+    <head>
+        <title>Gallifreyan translator</title>
+        <meta name="description" content="An open-source Gallifreyan translator">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="textfield-container">
+            <h3>Gallifreyan Translator</h3>
+            <input type="text"/>
+            <button type="button" onclick="updateText(); return false;">Translate</button>
+            <br>
+            
+        </div>
+        <div id="canvas-container">
+            <canvas id="canvas">Your browser doesn't support canvas</canvas>
+        </div>
+        <p style="font-size:10px">Created by The Doctor</p>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="https://cdn.rawgit.com/GallifreyanTranslator/TEST/master/jquery.mousewheel.js"></script>
-    <script src="https://cdn.rawgit.com/GallifreyanTranslator/TEST/master/gui.js"></script>
-    <script src="https://cdn.rawgit.com/GallifreyanTranslator/TEST/master/intersection.js"></script>
-    <script src="https://cdn.rawgit.com/GallifreyanTranslator/TEST/master/scroller.js"></script>
-    <script src="https://cdn.rawgit.com/GallifreyanTranslator/TEST/master/canvasUtils.js"></script>
-    <script src="https://cdn.rawgit.com/GallifreyanTranslator/TEST/master/Gallifreyan.js"></script>
+    <script src="jquery.mousewheel.js"></script>
+    <script src="intersection.js"></script>
+    <script src="scroller.js"></script>
+    <script src="canvasUtils.js"></script>
+    <script src="Gallifreyan.js"></script>
 
     <!-- Google Analytics stuff -->
     <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-000000']);
+            _gaq.push(['_trackPageview']);
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-456069']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
     </script>
-  </body>
+</body>
 </html>
 

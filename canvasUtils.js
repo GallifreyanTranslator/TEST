@@ -10,20 +10,20 @@ var scrollerObj = new Scroller(function(left, top, zoom) {
     maxZoom: 10
 });
 
-var canvas, ctx, mousedown = false, mousemove = 0;
+var canvas, ctx, mousedown = false, mousemove = 0, zoomLevel=1;
 
 function prepareCanvas() {
     canvas = document.getElementById("canvas");
-    canvas.onselectstart = function() { return false; }
+    canvas.onselectstart = function() { return false; };
     canvas.setAttribute('width', canvasSize);
     canvas.setAttribute('height', canvasSize);
-    canvas.style.width = "800px";
-    canvas.style.height = "800px";
+    canvas.style.width = "450px";
+    canvas.style.height = "450px";
     ctx = canvas.getContext("2d");
 
     ctx.lineCap = 'round';
 
-    scrollerObj.setDimensions(800, 800, 800, 800);	//I'm almost certain that I'm doing this the wrong way, but somehow it works flawlessly
+    scrollerObj.setDimensions(400, 400, 400, 400);	//I'm almost certain that I'm doing this the wrong way, but somehow it works flawlessly
     scrollerObj.setPosition($('canvas').position().left, $('canvas').position().top);
 
     canvas.addEventListener("mousedown", function(e) {
@@ -53,7 +53,18 @@ function prepareCanvas() {
 };
 
 function resetZoom() {
-    scrollerObj.zoomTo(1);
+    zoomLevel = 1;
+    scrollerObj.zoomTo(zoomLevel);
+}
+function zoomUp() {
+    zoomLevel = zoomLevel+0.2;
+    scrollerObj.zoomTo(zoomLevel);
+    redraw();
+}
+function zoomDown() {
+    zoomLevel = zoomLevel-0.2;
+    scrollerObj.zoomTo(zoomLevel);
+    redraw();
 }
 
 function getMouse(e) {
@@ -65,10 +76,10 @@ function getMouse(e) {
 
 $('canvas').mousewheel(function(e, delta, deltaX, deltaY) {
     if (selectedCircle) return;
-    scrollerObj.doMouseZoom(-delta * 3, e.timeStamp, e.pageX, e.pageY);
+    //scrollerObj.doMouseZoom(-delta * 3, e.timeStamp, e.pageX, e.pageY);
     redraw();
     return false;
-})
+});
 
 $(document).on("contextmenu", "canvas", function(e) {
     return false;
